@@ -52,3 +52,5 @@ The_Animal_Shelter.clients.each {|client| puts "\nClient name: " + client.name;
                                           puts "Number of kids: " + client.kids.to_s;
                                           puts "Number of pets: " + client.num_pets.to_s}
 
+#test test test
+
