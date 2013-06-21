@@ -64,7 +64,6 @@ class Animal
   end
 end
 
-
 ############__________MAIN__________############
 
 animal_haven = Shelter.new()
