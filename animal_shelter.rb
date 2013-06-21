@@ -52,7 +52,7 @@ class Animal
   end
 end
 
-**********__________MAIN__________**********
+########################__________MAIN__________#######################
 
 The_Animal_Shelter = Shelter.new()
 The_Animal_Shelter.clients << Client.new("Joe", 30, "male", 2, 5)
