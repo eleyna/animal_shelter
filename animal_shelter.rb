@@ -18,7 +18,7 @@ class Client
 end
 
 class Animal
-  attr_accessor :name, :breed, :age, :gender, :favorite_toy, :available
+  attr_accessor :name, :breed, :age, :gender, :favorite_toy, :available_to_adopt
   def initialize(name, breed, age, gender, favorite_toy, available_to_adopt)
     @name = name
     @breed = breed
@@ -52,8 +52,11 @@ The_Animal_Shelter.clients.each {|client| puts "\nClient name: " + client.name;
                                           puts "Number of kids: " + client.kids.to_s;
                                           puts "Number of pets: " + client.num_pets.to_s}
 
-#test test test
-#test2
-#test3
-#test4
+#puts names of animals that are available for adoption
+def adoption_list
+  puts "\n"
+  puts "Available for adoption:"
+  The_Animal_Shelter.animals.each {|animal| puts animal.name if animal.available_to_adopt == true}
+end
 
+animal_shelter_adoption_list = adoption_list()
