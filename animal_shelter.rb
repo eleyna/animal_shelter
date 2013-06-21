@@ -26,7 +26,8 @@ class Shelter
       puts "\n"
       puts "Available for adoption:"
       animals.each {|animal| puts animal.name if animal.available_to_adopt == true}
-      clients.each {|client| client.animals.each {|animal| puts animal.name if animal.available_to_adopt == true}}
+      clients.each {|client| client.animals.each {|animal|
+                    puts animal.name if animal.available_to_adopt == true}}
     end
 
     def intake_new_animal(animal)
